@@ -1776,6 +1776,106 @@
         opacity: 0
       }
     }
+
+    /* =========================================================
+   RESPONSIVE LAYOUT
+   Scales the complete 3D scene without changing the asset
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .stage {
+    perspective: 1300px;
+  }
+
+  .world {
+    transform: rotateX(-20deg) scale(0.78);
+    transform-origin: center center;
+  }
+
+  .title {
+    left: 28px;
+    top: 28px;
+  }
+
+  .title h1 {
+    font-size: 28px;
+  }
+
+  .title p {
+    font-size: 13px;
+  }
+
+  button.pp {
+    right: 28px;
+    bottom: 28px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .stage {
+    perspective: 1000px;
+    perspective-origin: 50% 42%;
+  }
+
+  .world {
+    top: 52%;
+    transform: rotateX(-20deg) scale(0.58);
+    transform-origin: center center;
+  }
+
+  .title {
+    left: 20px;
+    top: 20px;
+  }
+
+  .title h1 {
+    font-size: 22px;
+  }
+
+  .title p {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  button.pp {
+    right: 20px;
+    bottom: 20px;
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+}
+
+
+@media (max-width: 380px) {
+
+  .world {
+    transform: rotateX(-20deg) scale(0.50);
+  }
+
+  .title {
+    left: 16px;
+    top: 16px;
+  }
+
+  .title h1 {
+    font-size: 19px;
+  }
+
+  .title p {
+    font-size: 11px;
+  }
+
+  button.pp {
+    right: 16px;
+    bottom: 16px;
+  }
+
+}
   </style>
 </head>
 
